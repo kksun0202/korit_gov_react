@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export const useRefreshStore = create((setter) => ({
+export const useRefreshStore = create((set) => ({
 value: true,
 setValue: (callback) => set(state => ({value: callback(state)})),
 }));
